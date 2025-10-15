@@ -1,0 +1,162 @@
+:root {
+  --background-color: #f8f9fa;
+  --card-background: #ffffff;
+  --primary-color: #0d6efd;
+  --primary-hover: #0b5ed7;
+  --text-color: #212529;
+  --subtle-text: #6c757d;
+  --border-color: #dee2e6;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--subtle-text);
+}
+
+.input-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-form input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.input-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.input-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  font-weight: 500;
+  min-height: 24px;
+}
+
+#recommendationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.recommendation-card {
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  flex-grow: 1;
+}
+
+.product-id {
+  font-size: 0.8rem;
+  color: var(--subtle-text);
+  margin-bottom: 15px;
+  word-break: break-all;
+}
+
+.recommendation-card button {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  background-color: #e9ecef;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.recommendation-card button:hover {
+  background-color: #d8dde2;
+}
+
+#explanationBox {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e9f5ff;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
