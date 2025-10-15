@@ -22,3 +22,5 @@ Follow these steps to run the project locally.
 ```bash
 git clone [https://github.com/Simarpreet7876/E-commerce-Recommender-System.git](https://github.com/Simarpreet7876/E-commerce-Recommender-System.git)
 cd E-commerce-Recommender-System
+
+Video Link-https://drive.google.com/file/d/102huTuNmuA3OPZBWOlEZlDIeLUeYhR49/view?usp=drive_link
