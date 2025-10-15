@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Product Recommender</h1>
+            <p>Enter a User ID to get personalized product recommendations.</p>
+        </header>
+
+        <div class="input-form">
+            <input type="text" id="userIdInput" placeholder="e.g., 57b2a93a409812fe9610067b60ebe4f">
+            <button id="recommendBtn">Get Recommendations</button>
+        </div>
+        
+        <div id="loader" class="hidden"></div>
+        <p id="errorMessage" class="error-message"></p>
+
+        <div id="resultsContainer">
+            <div id="recommendationsGrid"></div>
+            <div id="explanationBox" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
